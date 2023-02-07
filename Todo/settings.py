@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'Usersapp',
     'todolist',
     'rest_framework.authtoken',
+    'django.contrib.staticfiles',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -146,4 +148,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ]
+}
+
+GRAPHENE = {
+    "SCHEMA": "todolist.schema.schema"
 }
